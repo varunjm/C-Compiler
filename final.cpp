@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 	char temp[256];
 	if( argc != 2 ) 															// Incomplete input
 	{
-		return 0;
+		return -1;
 	}
 
 	system("g++ -o codeGen codeGen.cpp");
@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
 	{
 		system("./variableRename");
 		system("cat out >> Output.c");
-		system("rm info.txt *_gen* out codeGen variableRename intermediate.txt");
+		system("rm info.txt out codeGen variableRename intermediate.txt");
 	}
 	return 0;
 }

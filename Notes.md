@@ -1,7 +1,7 @@
 ## High level information:
   - Reads C programs, but limited grammar. Does not include pointers, structures.
   - Checks for grammatical, but not syntactical correctness.
-  - Produces code similar to machine level instructions. 
+  - Produces 3 operand instructions based IR. 
   
 ## Three phases
   
@@ -15,7 +15,7 @@
   if it has a valid grammar. 
   
   ### Code Generator
-  Using the syntax tree from the previous phase, the code generator generates code similar to machine level instructions.
+  Using the syntax tree from the previous phase, the code generator generates IR.
   Which means
   - No, decision making statements like IF, WHILE, FOR etc. All of these statements are replaced by jump instructions.
   - All variables are grouped and declared as an array of memory locations.

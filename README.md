@@ -5,15 +5,13 @@ Language used : C++
 
 A) Compilation, Execution
 
-	Compilation	: g++ -Wall -o final final.cpp  
-	Execution	: ./final <filename.c>  
-				( Provide a 'C' language file name.  
-				Example : ./final ./test_input_files/automaton.c )  
-	Output		: An output file <Output.c> is generated.
+	$ make INFILE=./input/automation.c
+
+Output		: An output file output/Output.c is generated.
 
 B) Information
 
-This program takes in basic(no structs, pointers) 'C' program as input and generates equivalent of assembly code.
+This program takes in basic(no structs, pointers) 'C' program as input and generates 3 operand instruction based IR.
 
 C) High level algorithm
 
